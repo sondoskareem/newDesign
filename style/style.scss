@@ -283,9 +283,11 @@ body{
     overflow: hidden;
     opacity: 0;
     visibility: hidden;
+    display: none;
     &:target{
         opacity: 1;
         visibility: visible;
+        display: inline-block;
         transform: translate(-50% , -50%) scale(1);
        
     }
