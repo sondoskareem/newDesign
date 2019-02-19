@@ -316,8 +316,6 @@ body {
 }
 
 .sub-container {
-  height: 100vh;
-  width: 100vw;
   margin: 0;
   position: absolute;
   left: 50%;
@@ -334,11 +332,17 @@ body {
   overflow: hidden;
   opacity: 0;
   visibility: hidden;
+  display: none;
+  height: 0;
+  width: 0;
 }
 
 .sub-container:target {
+  height: 100vh;
+  width: 100vw;
   opacity: 1;
   visibility: visible;
+  display: inline-block;
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
 }
